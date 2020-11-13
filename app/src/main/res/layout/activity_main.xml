@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:background="@color/primaryDark"
+     tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="456dp"
+        android:layout_height="703dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--     layout_marginLeft - отступ с лева-->
+        <!--     layout_marginRight - отступ справа-->
+        <!--     paddingTop - отступ сверху-->
+        <!--     paddingBottom - отступ снизу-->
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="296dp"
+            android:layout_marginLeft="100sp"
+            android:layout_marginRight="100sp"
+            app:srcCompat="@drawable/q1" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="1sp"
+            android:fontFamily="monospace"
+            android:text="Авторизация"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="30sp"
+            android:layout_marginLeft="100sp"
+            android:layout_marginRight="100sp"
+            android:textStyle="bold" />
+
+        <!--        padding - ширина поля-->
+        <!--        background - цвет поля-->
+        <!--        textColor - цвет текста в полях ввода-->
+        <!--        background - цвет и форма поля-->
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="40sp"
+            android:background="@drawable/fields"
+            android:ems="13"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="15sp"
+            android:textColor="@color/mal" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="40sp"
+            android:background="@drawable/fields"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="13sp"
+            android:textColor="@color/mal" />
+
+        <Button
+            android:id="@+id/enter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="120sp"
+            android:background="@drawable/button"
+            android:padding="17sp"
+            android:text="Войти"
+            android:textColor="#03A9F4"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="150sp"
+            android:paddingBottom="10sp"
+            app:srcCompat="@drawable/q2"
+            />
+
+    </LinearLayout>
+ </androidx.constraintlayout.widget.ConstraintLayout>
